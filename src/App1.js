@@ -8,14 +8,14 @@ import TodoApp from "./components/reduxPractice/TodoApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-    <Provider store={store}>
-        <ReduxApp/>
-    </Provider>
-);
-
 // root.render(
 //     <Provider store={store}>
-//         <TodoApp/>
+//         <ReduxApp/>
 //     </Provider>
 // );
+
+root.render(
+    <Provider store={store}>
+        <TodoApp/>
+    </Provider>
+);
